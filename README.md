@@ -11,7 +11,8 @@
     https://github.com/SortableJS/vue.draggable.next
     使用了 vuedraggable@next这个库
 4、封装提示/消息弹出框
-https://blog.csdn.net/weixin_44815800/article/details/131962057
+    https://blog.csdn.net/weixin_44815800/article/details/131962057
+    使用了h函数渲染VRNode
     
 
 
