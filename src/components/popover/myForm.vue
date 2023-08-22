@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import myPopover from './myPopover.vue';
 
 // 定义props
@@ -43,6 +43,12 @@ const {
         }
     }
 });
+
+
+onMounted(() => {
+    dialogVisible.value = true;
+});
+
 // 定义emits
 const emit = defineEmits(['submit', 'closed']);
 
@@ -52,6 +58,7 @@ let formData = ref({
     username: '',
     password: '',
 });
+
 let formRef = ref();
 let formRules = ref({
     username: [{
